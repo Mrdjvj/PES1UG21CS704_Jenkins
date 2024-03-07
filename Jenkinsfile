@@ -7,10 +7,6 @@ agent any stages 1
 //
 //
 //
-stage('Clone repository') {
-steps {
-checkout ([$class: 'GitSCM', branches: [[name: **/main']], userRemoteConfigs: [[url: 'https://github.com/Jatinsharma159/Jenkins-git']ll)
-}
 stage ('Build') {
 steps {
 build 'PES2UG19CS159-1'

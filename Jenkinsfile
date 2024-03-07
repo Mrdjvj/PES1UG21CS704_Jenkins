@@ -19,7 +19,7 @@ sh 'g++ main.cpp -o output'
 }
 stage ('Test') {
 steps 1
-sh '-/output'
+sh './output'
 }
 }
 stage ('Deploy') {
